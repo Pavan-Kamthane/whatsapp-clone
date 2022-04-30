@@ -101,10 +101,10 @@ function Sidebar() {
               <p className="sidebar__greeting mobile__tag">
                 {" "}
                 <a
-                  href="https://alii13.github.io/portfolio/"
+                  // href="https://alii13.github.io/portfolio/"
                   style={{ color: "white" }}
                 >
-                  Made with ♥ by <span style={{ color: "white" }}>Ali</span>
+                  Made with ♥ by <span style={{ color: "white" }}>Pavan</span>
                 </a>
               </p>
               <div className="sidebar__headerRight">
@@ -155,8 +155,8 @@ function Sidebar() {
             <Avatar src={photoURL} />{" "}
             <p className="sidebar__greeting">
               {" "}
-              <a href="https://alii13.github.io/portfolio/">
-                Made with ♥ by <span style={{ color: "blue" }}>Ali</span>
+              <a >
+                Made with ♥ by <span style={{ color: "blue" }}>Pavan</span>
               </a>
             </p>
             <div className="sidebar__headerRight">

@@ -36,6 +36,27 @@ function App() {
       )}
     </div>
   );
+
+  // <div className="app">
+  //     {!user && !uid ? (
+  //       <Login />
+  //     ) : (
+  //       <div className="app__body">
+  //         <Router>
+  //           <Sidebar />
+  //           <Switch>
+  //             <Route path="/rooms/:roomId">
+  //               <Chat />
+  //             </Route>
+  //             <Route path="/">
+  //               <Chat />
+  //             </Route>
+  //           </Switch>
+  //         </Router>
+  //       </div>
+  //     )}
+  //   </div>
+  // );
 }
 
 export default App;
