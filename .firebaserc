@@ -1,6 +1,8 @@
 {
   "projects": {
     "default": "meet-mee-f39cc",
-    "whatsappB": "meet-mee-f39cc"
-  }
+    "whatsappB": "meet-mee-f39cc",
+    "hosting": "meet-mee-f39cc"
+  },
+  "targets": {}
 }
