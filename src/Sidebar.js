@@ -16,7 +16,7 @@ import Loader from "./Loader";
 function Sidebar() {
   const [rooms, setRooms] = useState([]);
   const [toggler, setToggler] = useState(false);
-  const [sidebarBool, setsidebarBool] = useState(true);
+  // const [sidebarBool, setsidebarBool] = useState(true);
   const [{ togglerState }, dispatch] = useStateValue();
   const [search, setSearch] = useState([]);
   const [input, setInput] = useState("");
@@ -27,8 +27,8 @@ function Sidebar() {
     return values.filter((v) => v.data.name.toLowerCase().match(re));
   };
   const handleChange = (e) => {
-    setsidebarBool(false);
-    setInput(e.target.value);
+    // setsidebarBool(false);
+    // setInput(e.target.value);
   };
   const exitApp = () => {
     localStorage.removeItem("uid");
@@ -40,7 +40,7 @@ function Sidebar() {
       setSearch(matcher(input, rooms));
     }
     if (input === "") {
-      setsidebarBool(true);
+      // setsidebarBool(true);
     }
   }, [input]);
 
@@ -101,10 +101,10 @@ function Sidebar() {
               <p className="sidebar__greeting mobile__tag">
                 {" "}
                 <a
-                  // href="https://alii13.github.io/portfolio/"
+                  // href=""
                   style={{ color: "white" }}
                 >
-                  Made with ♥ by <span style={{ color: "white" }}>Pavan</span>
+                  Made with ♥ by <span style={{ color: "white" }}>itz__Amuzz </span>
                 </a>
               </p>
               <div className="sidebar__headerRight">
@@ -133,7 +133,7 @@ function Sidebar() {
               />
             </div>
           </div>
-          {sidebarBool ? (
+          {/* {sidebarBool ? (
             <div className="sidebar__chats">
               <SidebarChat addNewChatVal="true" />
               {rooms.map((room) => (
@@ -147,7 +147,7 @@ function Sidebar() {
                 <SidebarChat key={room.id} id={room.id} name={room.data.name} />
               ))}
             </div>
-          )}
+          )} */}
         </div>
       ) : (
         <div className={"sidebar"}>
@@ -156,7 +156,7 @@ function Sidebar() {
             <p className="sidebar__greeting">
               {" "}
               <a >
-                Made with ♥ by <span style={{ color: "blue" }}>Pavan</span>
+                Made with ♥ by <span style={{ color: "blue" }}>itz__Amuzz </span>
               </a>
             </p>
             <div className="sidebar__headerRight">
@@ -184,7 +184,7 @@ function Sidebar() {
               />
             </div>
           </div>
-          {sidebarBool ? (
+          {/* {sidebarBool ? (
             <div className="sidebar__chats scrollbar-juicy-peach">
               <SidebarChat addNewChatVal="true" />
               {rooms.length == 0 ? (
@@ -198,15 +198,15 @@ function Sidebar() {
                   />
                 ))
               )}
-            </div>
-          ) : (
+            </div> */}
+          {/* ) : ( */}
             <div className="sidebar__chats ">
               <SidebarChat addNewChatVal="true" />
               {search.map((room) => (
                 <SidebarChat key={room.id} id={room.id} name={room.data.name} />
               ))}
             </div>
-          )}
+          
         </div>
       )}
     </>

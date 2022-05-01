@@ -22,14 +22,16 @@
 
 .login__container button {
     margin-top: 50px;
+    padding: 0 22px;
     text-transform: inherit !important;
-    background-color: #0fb45c;
-    color: white;
+    background-color: #ddd5d5;
+    color: #0517ed;
+    font-size: 1.5em;
 }
 
 .login__container button:hover {
     text-transform: inherit !important;
-    background-color: #0b9c4f;
+    background-color: #7517ed;
     color: white;
 }
 
