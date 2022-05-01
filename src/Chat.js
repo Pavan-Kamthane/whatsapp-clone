@@ -349,7 +349,7 @@ function Chat() {
                               {e.name.substr(0, e.name.indexOf(" "))}
                             </span>
                             <Linkify>{e.messageData}</Linkify>
-                            <span className="chat__timestamp">
+                            {/* <span className="chat__timestamp">
                               <div className="hidden">
                                 {
                                   (extramin =
@@ -452,7 +452,7 @@ function Chat() {
                                   : minutes
                                 : "00"}
                               {hourly > 12 ? " PM" : " AM"}
-                            </span>
+                            </span> */}
                           </p>
                         </>
                       ) : (

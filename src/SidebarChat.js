@@ -30,22 +30,22 @@ function SidebarChat(props) {
   useEffect(() => {
     setSeed(Math.floor(Math.random() * 5000));
   }, []);
-  const deleteRoom = () => {
-    const passwordVerify = prompt("Enter Admin Password to delete Room");
-    if (passwordVerify == password) {
-      db.collection("rooms")
-        .doc(id)
-        .delete()
-        .then(function () {
-          window.location = "/";
-        })
-        .catch(function (error) {
-          console.error("Error removing document: ", error);
-        });
-    } else {
-      alert("You are not authorised to delete rooms");
-    }
-  };
+  // const deleteRoom = () => {
+  //   const passwordVerify = prompt("Enter Admin Password to delete Room");
+  //   if (passwordVerify == password) {
+  //     db.collection("rooms")
+  //       .doc(id)
+  //       .delete()
+  //       .then(function () {
+  //         window.location = "/";
+  //       })
+  //       .catch(function (error) {
+  //         console.error("Error removing document: ", error);
+  //       });
+  //   } else {
+  //     alert("You are not authorised to delete rooms");
+  //   }
+  // };
 
   const createChat = () => {
     const roomName = prompt("Please enter name for chat");
@@ -87,9 +87,9 @@ function SidebarChat(props) {
           </div>
         </div>
       </Link>
-      <div className="sidebarChat__delete" onClick={deleteRoom}>
+      {/* <div className="sidebarChat__delete" onClick={deleteRoom}>
         <DeleteForeverIcon />
-      </div>
+      </div> */}
     </div>
   ) : (
     <div onClick={createChat} className="sidebarChat addnew__chat">

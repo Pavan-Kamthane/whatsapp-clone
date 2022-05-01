@@ -82,7 +82,7 @@
 
 .mobile__tag {
     color: white !important;
-    font-size: 10px;
+    font-size: 18px;
 }
 
 @media(max-width:628px) {
@@ -93,7 +93,7 @@
 
     .sidebar__header {
         flex: 1;
-        background-color: #075E54;
+        background-color: #1c154d;
     }
 
     .sidebar__header button.MuiButtonBase-root.MuiIconButton-root {
@@ -101,7 +101,7 @@
     }
 
     .siderbar__wrapper {
-        background-color: #075E54;
+        background-color: #14075e;
     }
 
     .siderbar__wrapper button.MuiButtonBase-root.MuiIconButton-root {
